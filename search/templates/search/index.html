@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+    
+    <title>New York Times Search</title>
+    {% load static %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/theme.css' %}" rel="stylesheet">
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDizic3MQztAcgefEQrpU73od3m0kQ4Tyc&sensor=TRUE"> </script>
+    
+    <script type="text/javascript" src="{% static 'js/map.js' %}" ></script>
+  </head>
+  <body onload="initialize()">
+  <center>
+  <h1> New York Times Search</h1>
+  
+	<div>
+      <form action="/search/" method="get">
+        <input id="key" type="text" name="key" > 
+        <input type="submit" value="Search" class="btn btn-lg btn-primary">
+      </form>
+      <form action="/advanced_search/">
+        <button type="submit" class="btn btn-lg btn-warning" >Advaced Search</button>
+      </form>
+      
+  </div>
+  </center>
+	<div id="map_canvas" style="width:50%; height:50%;margin: 0 auto;"></div>
+	
+  </body>
+</html>
