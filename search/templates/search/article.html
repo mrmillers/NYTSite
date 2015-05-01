@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>{{ title }}</title>
+    {% load static %}
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/theme.css' %}" rel="stylesheet">
+
+</head>
+<body>
+<h1>{{ title }}</h1>
+<p>
+    {% if date %}Date:<strong>{{ date|date:"M j, Y"  }}</strong>{% endif %}
+    {% if author %}Author:<strong>{{ author }}</strong> {% endif %}
+    {% if location %}Author:<strong>{{ location }}</strong> {% endif %}
+</p>
+{% for para in text %}
+<p>{{ para }}</p>
+{% empty %}
+<p><strong>Sorry,no content for this article.</strong></p>
+{% endfor %}
+</body>
+</html>
