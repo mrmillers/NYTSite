@@ -12,7 +12,7 @@ def index(request):
 
 
 def query(request):
-    n = 10
+    n = 20
     key = request.GET.get("key", "")
     location = request.GET.get("location", "")
     people = request.GET.get("people", "")
@@ -23,6 +23,7 @@ def query(request):
         news = News.objects.get(nid=x)
         score = data[x]['score']
         data[x] = {
+            'nid': x,
             'score': score,
             'title': news.title,
             'location': news.location,
@@ -77,3 +78,5 @@ def article(request, key):
     except:
         raise Http404
     return render(request, "search/article.html", data)
+
+

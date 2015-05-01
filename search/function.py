@@ -1,6 +1,11 @@
 __author__ = 'miller'
 import nytquery
 from datetime import datetime
+import json;
+
+
+def strToJson(s):
+    return json.load(s)
 
 
 def strToDate(s):
@@ -27,7 +32,7 @@ def queryResult(n, key, other, hw=0.8):
             result[x['id']] = {'score': x['score'] * alpha[i]}
         for x in other:
             if x != "":
-                for z in queryIndex(1, n, key + " " + x):
+                for z in queryIndex(i, n, key + " " + x):
                     if z['id'] in result:
                         result[z['id']]['score'] += z['score'] * alpha[i]
                     else:

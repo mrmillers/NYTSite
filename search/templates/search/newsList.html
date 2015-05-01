@@ -1,0 +1,14 @@
+<ol>
+    {% for item in news %}
+    <li>
+        <a herf="{{ article/item.id }}">{{ item.title }}</a>
+        <p>
+        {% if item.author %}Author:{{ item.author }}{% endfor %}
+        {% if item.location %}Location:{{ item.location }}{% endfor %}
+        {% if item.date %}Date:{{ item.date }}{% endfor %}
+        </p>
+    </li>
+    {% empty %}
+    <p>Sorry, no articles match your search.</p>
+    {% endfor %}
+</ol>
