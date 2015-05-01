@@ -22,14 +22,11 @@ def query(request):
 
 def search(request):
     key = request.GET.get("key", "@@")
-    location = request.GET.get("location", "")
-    people = request.GET.get("people", "")
-    start_time = request.GET.get("start_time", "")
-    end_time = request.GET.get("end_time", "")
     return HttpResponse(key)
 
 
 def advanced_search(request):
+
     return render(request, "search/advanced_search.html", {})
 
 
