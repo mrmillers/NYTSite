@@ -18,14 +18,12 @@
     <h1> New York Times Search</h1>
 
     <div>
-        <form action="/search/" method="get">
             Key Words:<input id="key" type="text" name="key">
             Location:<input id="location" type="text" name="location">
             People:<input id="people" type="text" name="people">
             Time: From <input id="time_start" type="date" name="time_start"> To <input id="time_end" type="date"
                                                                                        name="time_end">
-            <input type="submit" value="Search" class="btn btn-lg btn-primary">
-        </form>
+            <input type="button" value="Search" class="btn btn-lg btn-primary" onclick="search()">
     </div>
 </center>
 <div>
