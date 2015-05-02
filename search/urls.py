@@ -2,8 +2,8 @@ from django.conf.urls import url
 import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^search', views.search, name='search'),
+    url(r'^$', views.advanced_search, name='index'),
+    #url(r'^search', views.search, name='search'),
     url(r'^advanced_search', views.advanced_search, name='advanced_search'),
     url(r'^mapTest/', views.map_test, name='mapTest'),
     url(r'^query', views.query, name='query'),
