@@ -1,8 +1,7 @@
 __author__ = 'miller'
 import nytquery
 from datetime import datetime
-import json
-import re, math
+import re, math, json
 from collections import Counter
 
 
