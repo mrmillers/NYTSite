@@ -9,10 +9,12 @@
     {% load static %}
     <script type="text/javascript" src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/map.js' %}"></script>
+
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/theme.css' %}" rel="stylesheet">
-
+    <link href="{% static 'css/advancedsearch.css' %}" rel="stylesheet">
+    
 </head>
 <body onload="initialize()">
 <center>
@@ -28,8 +30,8 @@
     </div>
 </center>
 <div>
-    <div id="map_canvas" style="width:500px; height:800px; float:right"></div>
-    <div id="news_list" style="overflow:auto; width:500px; height:800px; border:dotted"></div>
+    <div id="map_canvas" ></div>
+    <div id="news_list" ></div>
 </div>
 </body>
 </html>

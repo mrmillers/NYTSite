@@ -1,0 +1,12 @@
+#map_canvas {
+	position:relative;
+	width:900px; 
+	height:650px; 
+	float:right
+}
+
+#news_list {
+	width:500px; 
+	height:650px; 
+	border:dotted 
+}
