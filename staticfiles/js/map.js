@@ -5,10 +5,10 @@ function showList(rank, showGeo){
     var list = "<ol>";
     $.each(rank,function (key,value){
             if (showGeo < 0 || value["geoIndex"] == showGeo){
-                list += "<li><p><a target=\"_blank\" href=\"/article/" + value["nid"] +  "\">" + value["title"] +"</a></p><p>";
-                if (value["author"]!="") list+= "Author:" + value["author"];
-                if (value["location"]!="") list+= "Location:" + value["location"];
-                if (value["date"]!="") list+= "Date:" + value["date"];
+                list += "<li><p class=\"title\"><a target=\"_blank\" href=\"/article/" + value["nid"] +  "\">" + value["title"] +"</a></p>";
+                if (value["author"]!="") list+= "<p><strong>Author:</strong> " + value["author"] + "</p>";
+                if (value["location"]!="") list+= "<p><strong>Location:</strong> " + value["location"] + "</p>";
+                if (value["date"]!="") list+= "<p><strong>Date:</strong> " + value["date"] + "</p>";
                 list += "</p></li>";
             }
     });

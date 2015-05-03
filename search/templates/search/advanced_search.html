@@ -11,9 +11,11 @@
     <script type="text/javascript" src="{% static 'js/map.js' %}"></script>
     
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
     <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">
+    <!--
     <link href="{% static 'css/theme.css' %}" rel="stylesheet">
-    
+    -->
     <link href="{% static 'css/advancedsearch.css' %}" rel="stylesheet">
     
 </head>
@@ -29,6 +31,7 @@
                                                                                        name="time_end">
             <input type="button" value="Search" class="btn btn-lg btn-primary" onclick="search()">
     </div>
+    <br>
 </center>
 <div>
     <div id="map_canvas" ></div>
