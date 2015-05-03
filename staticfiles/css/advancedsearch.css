@@ -1,12 +1,32 @@
+@font-face
+{
+	font-family: OldLondon;
+	src: url(OldLondon.tff);
+}
+h1 {
+	font-family:OldLondon;
+	margin-right:auto;
+    margin-left:auto;
+    width:60%;
+    font-size:4em;
+    text-align:center; 
+}
 #map_canvas {
 	position:relative;
-	width:900px; 
+	right:20px;
+	width:66%; 
 	height:650px; 
-	float:right
+	float:right;
+	bottom:auto;
 }
 
 #news_list {
-	width:500px; 
+	position:relative;
+	left:20px;
+	width:30%; 
 	height:650px; 
-	border:dotted 
+	float:left;
+	overflow: auto;
+	border:1px dotted #778899;
+	border-radius:5px;
 }

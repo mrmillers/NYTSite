@@ -1,7 +1,8 @@
+
 h1 {
     margin-right:auto;
     margin-left:auto;
-    width:70%;
+    width:60%;
     font-size:2.5em;
     text-align:center; 
     font-style:italic;
@@ -9,7 +10,7 @@ h1 {
 #info {
     margin-right:auto;
     margin-left:auto;
-    width:70%;
+    width:50%;
     font-size:1.0em;
     text-align:center;
 }
@@ -17,9 +18,9 @@ h1 {
     text-align:justify;
     margin-left:auto;
     margin-right:auto;
-    width:60%;
+    width:50%;
     font-size:1.125em;
-    font-family:"Times New Roman", Times, sans-serif;
+    font-family:"Georgia", sans-serif;
 }
 #error {
     text-align:center;
